@@ -55,9 +55,19 @@ header a {
 .workout-details {
   box-sizing: border-box;
   background: #fff;
+  position: relative;
   width: 100%;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.workout-details span {
+  background: #F1F1F1;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 20px;
   border-radius: 5px;
 }
 
@@ -95,11 +105,15 @@ header a {
   padding: 10px;
 }
 
-.workout-form .error {
+.workout-form div.error {
   color: var(--error);
   padding: 10px;
   margin-top: 20px;
   background: #ffefef;
   border: 1px solid var(--error);
   border-radius: 4px;
+}
+
+.workout-form .error {
+  border: 1px solid var(--error)
 }
